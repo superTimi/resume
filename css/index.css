@@ -1,0 +1,449 @@
+﻿/* */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+} 
+/*清楚默认样式*/
+html,body,ul,ol{
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB";
+	list-style: none;
+	font-size: 0.9rem;
+	background-color: #f5f5f5;
+}
+html,body{
+	width: auto;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #e92322;
+}
+/*公共区域*/
+.w{
+	width: 1200px;
+	margin: 0 auto ;
+	/*padding: 0 100px;*/
+
+}
+/*头部   固定定位*/
+.top-bar{
+	width: 100%;
+	height: 40px;
+	background-color: #ccc;
+	line-height: 40px;
+	color: #118850;
+}
+
+.top-bar ul li {
+	float: left;
+	width: 80px;
+	height: 100%;
+	text-align: center;
+}
+.top-bar ul li a{
+	color: #118850;
+}
+.top-bar ul li a:hover{
+	color: #e92322;
+}
+.top-bar ul li a:after{
+	content: "|";
+    margin: 0 10px;
+}
+.top-bar ul li:nth-child(6) a:after{
+	content: none;
+}
+.top-bar .callme{
+	float: right;
+}
+/*包裹栏目的div*/
+.content{
+	height: 100%;
+}
+
+/* 第一栏        */
+.content-1{
+	position: relative;
+	padding: 100px 100px 0 100px;
+	display: block;
+}
+.content-1 .clickme{
+	position: relative;
+	width: 200px;
+	height:40px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color:#333;
+	cursor: pointer;
+}
+.content-1 .clickme .onclick-me{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+.content-1  .xinxi{
+	width: 200px;
+	line-height: 25px;
+	background-color: #aaa;
+	margin-top: 3px;
+	padding-left: 10px;
+	font-size: 1rem;
+	box-sizing:border-box;
+	display: none;
+}
+.content-1 > .nav{
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	background:url("../images/bg.png") no-repeat;
+}
+.content-1 > .nav > .text-1{
+	display: block;
+	padding: 80px 0px 0 200px;
+	font-size: 4rem;
+	line-height: 85px;
+}
+
+
+.ctrl-right:hover{
+	color: #000;
+}
+.content-1-b{
+	float: right;
+	font-size: 1rem;
+}
+.content-1-b img{
+	width: 25px;
+	height: 25px;
+	vertical-align: top;
+}
+.git img{
+	width: 30px;
+}
+.content-1-b a{
+	font-size: 1.5rem;
+	color: #333;
+}
+.content-1-b a:hover{
+	color: #e92322;
+}
+
+/*第二栏*/
+.content-2{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.content-2-title{
+	height: 100px;
+}
+.aboutweb{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.content-2-title p{
+	width: 420px;
+	text-align: center;
+	font-size: 1.3rem;
+	border-top:2px solid red;
+	padding: 20px 0 5px 0;
+}
+.content-2-bottom{
+	position: relative;
+	height: 500px;
+	background:url("../images/bj_1.png") center center repeat-y;
+    margin-top: 50px;
+}
+.aboutme-1{
+	width: 500px;
+    transition: all 1s;
+}
+.aboutme-1:hover {
+    transform: translateY(-20px);
+    box-shadow: 10px 10px 5px #ccc;
+}
+.aboutme-1:hover .about-radius{
+    transform: translateY(-20px);
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.about-2{
+	float: right;
+	margin-top: 50px;
+}
+.about-3{
+	margin-top: 180px;
+}
+.about-4{
+	float: right;
+	margin-top: 60px;
+}
+.about-radius{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 100px;
+	background-color: #333;
+	color: #fff;
+	position: absolute;	
+	left: 50%;
+	margin-left: -50px;
+}
+.radius-one{
+	top: -20px;
+}
+.radius-two{
+	top: 140px;
+}
+.radius-three{
+	top: 300px;
+}
+.radius-four{
+	top: 460px;
+}
+.aboutme{
+	font-size: 1.1rem;
+	text-indent:2em;
+	letter-spacing: 2px;	
+}
+/* ******************第三栏*********************/
+.content-3{
+	height: 700px;
+	position: relative;
+	display: none;
+
+}
+.content-3 ul{
+    width: 200px;
+    position: absolute;
+    left:50%;
+    top: 250px;
+    margin-left:-100px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) rotateY(0deg);
+    animation: xueyou 10s linear infinite;
+    cursor: pointer;
+    margin-top: 40px;
+
+}	
+@keyframes xueyou {
+    from{
+        transform:rotateX(-30deg) rotateY(0deg);
+    }
+    to{
+    transform:rotateX(-30deg) rotateY(360deg);
+
+    }
+}
+.content-3 ul:hover{
+   animation-play-state: paused;
+}
+.content-3 ul:hover li img{
+    opacity: 0.3;
+}
+.content-3 ul li:hover img{
+    opacity: 1;
+}
+.content-3  ul li{
+    width: 200px;
+    height: 300px;
+    list-style: none;
+    position: absolute;
+}
+.content-3 ul li img{
+    width: 200px;
+    height: 300px;
+}
+.content-3    ul li:nth-child(1){
+    transform: rotateY(60deg) translateZ(300px);
+}
+.content-3    ul li:nth-child(2){
+    transform: rotateY(120deg) translateZ(300px);
+}
+.content-3    ul li:nth-child(3){
+    transform: rotateY(180deg) translateZ(300px);
+}
+.content-3    ul li:nth-child(4){
+    transform: rotateY(240deg) translateZ(300px);
+}
+.content-3    ul li:nth-child(5){
+    transform: rotateY(300deg) translateZ(300px);
+}
+.content-3    ul li:nth-child(6){
+    transform: rotateY(360deg) translateZ(300px);
+}
+
+.introduce{
+    height: 100px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color:#ccc;
+    color: #fff;
+    position: absolute;
+    top:0;
+    text-align: center;
+    line-height: 100px;
+    display: none;
+
+}
+/************第四栏****************/
+.content-4{
+	display: none;
+}
+.box-1{
+        width: 560px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        left:15%;
+        float: left;
+	margin-top:40px;
+      }
+#copy_box_1{
+	margin-left: 5%;
+}
+.box-1 span{
+        position: absolute;
+        font-size: 70px;
+        width: 70px;
+        height: 70px;
+        top:50%;
+        margin-top: -35px;
+        color: #fff;
+        border-radius: 35px;
+        text-align: center;
+        line-height: 70px;
+        cursor: pointer;
+        font-weight: bold;
+        z-index: 10;
+    	-webkit-user-select:none;	/*防止选中文字*/
+		-moz-user-select:none;
+		-o-user-select:none;
+	 	-ms-user-select:none;
+}
+.box-1-gt{
+    right: 0;
+}
+.box-2 img{
+    position: absolute;
+    left: 0px;
+}
+.clearfl{
+	clear: both;
+}
+.aihao{
+	width: 900px;
+	margin-top: 20px;
+	line-height: 30px;
+	font-size: 1.2rem;
+}
+/************专业技能****************/
+.content-5{
+	display: none;
+}
+.content-5-skill{
+	margin:0 auto;
+}
+.content-5-skill-l{
+	float: left;
+}
+.float-l{
+	width: 400px;
+	height: 300px;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 42px;
+}
+.boot{
+	display: inline-block;
+	width: 130px;
+    margin-left: -10px;
+	font-size: 1.9rem;
+}
+.content-5-skill-r{
+	width: 750px;
+	float: right;
+	color: #111;
+}
+.content-5-skill-r p{
+	font-size: 1.2rem;
+	line-height: 25px;
+}
+.content-5-skill-r div{
+	text-indent: 2em;
+	font-size: 1.4rem;
+	line-height: 30px;
+}
+/* 联系我 */
+.content-6{
+	padding-top: 200px;
+	box-sizing: border-box;
+	display: none;
+}
+.num-con{
+	margin-top: 20px;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/*左边按钮*/
+.ctrl-left{
+	position:fixed;
+	top: 50%;
+	margin-top: -82px;
+	left: 0;
+	width: 60px;
+	font-size: 10rem;
+	text-align: center;
+	color: #ccc;
+	font-weight: bold;
+}
+.ctrl-left:hover{
+	color: #000;
+}
+/*右边按钮*/
+.ctrl-right{
+	position:fixed;
+	top: 50%;
+	margin-top: -82px;
+	right: 12px;
+	width: 60px;
+	font-size: 10rem;
+	text-align: center;
+	color: #ccc;
+	font-weight: bold;
+}
